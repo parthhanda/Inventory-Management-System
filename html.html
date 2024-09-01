@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Management System</title>
+    <link rel="stylesheet" href="projectfee2_css.css">
+    
+    
+</head>
+<body>
+    <header>
+        <h1>Stock Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Add Stock</a></li>
+                <li><a href="#">View Stock</a></li>
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dashboard">
+            <h2>Dashboard</h2>
+            <div class="dashboard-item">
+                <h3>Total Products</h3>
+                <p>150</p>
+            </div>
+            <div class="dashboard-item">
+                <h3>Low Stock Items</h3>
+                <p>5</p>
+            </div>
+            <div class="dashboard-item">
+                <h3>Recent Additions</h3>
+                <p>10</p>
+            </div>
+        </section>
+
+        <section class="add-stock">
+            <h2>Add New Stock</h2>
+            <form>
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" name="product-name" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <label for="price">Price:</label>
+                <input type="number" id="price" name="price" step="0.01" required>
+
+                <button type="submit">Add Stock</button>
+            </form>
+        </section>
+
+        <section class="view-stock">
+            <h2>Stock List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product A</td>
+                        <td>100</td>
+                        <td>$50</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td>Product B</td>
+                        <td>50</td>
+                        <td>$30</td>
+                        <td><button>Edit</button> <button>Delete</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Stock Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
