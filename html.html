@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stock Management System</title>
-    <link rel="stylesheet" href="projectfee2_css.css">
-    
-    
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
     <header>
         <h1>Stock Management System</h1>
         <nav>
             <ul>
                 <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Add Stock</a></li>
-                <li><a href="#">View Stock</a></li>
+                <li><a href="#add-stock">Add Stock</a></li>
+                <li><a href="#view-stock">View Stock</a></li>
                 <li><a href="#">Reports</a></li>
+                <li><a href="#" id="loginBtn">Login</a></li>
             </ul>
         </nav>
     </header>
@@ -38,7 +39,7 @@
             </div>
         </section>
 
-        <section class="add-stock">
+        <section id="add-stock">
             <h2>Add New Stock</h2>
             <form>
                 <label for="product-name">Product Name:</label>
@@ -54,7 +55,7 @@
             </form>
         </section>
 
-        <section class="view-stock">
+        <section id="view-stock">
             <h2>Stock List</h2>
             <table>
                 <thead>
@@ -86,5 +87,58 @@
     <footer>
         <p>&copy; 2024 Stock Management System. All rights reserved.</p>
     </footer>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Login</h1>
+            <form>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <i class='bx bxs-user' style="position: absolute; top: 34%; right: 5%;"></i>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <i class='bx bxs-lock-alt' style="position: absolute; top: 57%; right: 5%;"></i>
+
+                <div class="btn-container">
+                    <button class="btn" type="submit">Login</button>
+                    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+                </div>
+            </form>
+            <h3>Don't Have An Account? <a href="signup.html"><b>Register</b></a></h3>
+        </div>
+    </div>
+
+    <!-- JavaScript to manage the modal -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("loginModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("loginBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function () {
+            modal.style.display = "flex";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
+
 </html>
