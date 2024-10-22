@@ -1,6 +1,6 @@
 body
 {
-    background-image: url('../Images/login_bg1.jpg');
+    background-image: url('../Images/login_bg1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
@@ -22,9 +22,10 @@ div.login_header h1
 {
     font-size: 100px;
     font-weight: bold;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 0px;
     margin: 0px;
+    opacity: 80%;
 }
 
 div.login_header p
@@ -34,6 +35,8 @@ div.login_header p
     margin: 0px;
     text-transform: uppercase;
     display: inline-block;
+    color: rgb(0, 0, 0);
+    opacity: 75%;
 }
 
 div.login_header p:after
