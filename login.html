@@ -4,36 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login-Stockerzz</title>
-    <link rel="stylesheet" href="CSS/login.css">
-
+    <link rel="stylesheet" href="/CSS/login.css">
+    <script src="/JAVASCRIPT/login.js" defer></script>
 </head>
 <body>
     <div class="container">
-
         <div class="login_header">
             <h1>STOCKERZZ</h1>
             <p>Inventory Management System</p>
         </div>
     
         <div class="login_body">
-            <form action="">
-    
+            <form id="loginForm">
                 <div class="login_input_cont">
-                    <label for="">Username</label>
-                    <input placeholder="Username" type="text" >
+                    <label for="email">Email</label>
+                    <input id="email" placeholder="Email" type="email">
+                    <small id="emailWarning" style="color: red; display: none;">Please enter a valid Gmail address.</small>
                 </div>
     
                 <div class="login_input_cont">
-                    <label for="">password</label>
-                    <input placeholder="Password" type="text" >
+                    <label for="username">Username</label>
+                    <input id="username" placeholder="Username" type="text">
+                </div>
+    
+                <div class="login_input_cont">
+                    <label for="password">Password</label>
+                    <input id="password" placeholder="Password" type="password">
+                    <small id="passwordWarning" style="color: red; display: none;">Password must be at least 8 characters, include an uppercase letter, a lowercase letter, and a number.</small>
                 </div>
     
                 <div class="login_button_cont">
-                    <button>Login</button>
+                    <button type="button" onclick="login()">Login</button>
+                    <button type="button" onclick="openSignup()">Sign Up</button>
                 </div>
             </form>
         </div>
     </div>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal_content">
+            <span class="close" onclick="closeSignup()">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <div class="signup_input_cont">
+                    <label for="signupEmail">Email</label>
+                    <input id="signupEmail" placeholder="Email" type="email">
+                    <small id="signupEmailWarning" style="color: red; display: none;">Please enter a valid Gmail address.</small>
+                </div>
     
+                <div class="signup_input_cont">
+                    <label for="signupUsername">Username</label>
+                    <input id="signupUsername" placeholder="Username" type="text">
+                </div>
+    
+                <div class="signup_input_cont">
+                    <label for="signupPassword">Password</label>
+                    <input id="signupPassword" placeholder="Password" type="password">
+                    <small id="signupPasswordWarning" style="color: red; display: none;">Password must be at least 8 characters, include an uppercase letter, a lowercase letter, and a number.</small>
+                </div>
+                
+                <div class="signup_button_cont">
+                    <button type="button" onclick="signup()">Create Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
