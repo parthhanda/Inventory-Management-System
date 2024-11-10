@@ -63,6 +63,12 @@
                     <input id="signupPassword" placeholder="Password" type="password">
                     <small id="signupPasswordWarning" style="color: red; display: none;">Password must be at least 8 characters, include an uppercase letter, a lowercase letter, and a number.</small>
                 </div>
+
+                <div class="signup_input_cont">
+                    <label for="userPhoto">Add Photo</label>
+                    <input id="userPhoto" type="file" accept="image/*">
+                    <small id="photoWarning" style="color: red; display: none;">Please upload a valid image.</small>
+                </div>
                 
                 <div class="signup_button_cont">
                     <button type="button" onclick="signup()">Create Account</button>

@@ -3,8 +3,8 @@ let totalSales = 0;
 
 var logoutBtn = document.getElementById("logoutBtn");
 logoutBtn.onclick = function () {
-    alert("Logged out successfully!");
-    window.location.reload();
+    // alert("Logged out successfully!"); // Alert to confirm logout
+    window.location.href = "Homepage.html"; // Redirects to another page after logout
 };
 
 const ctxPie = document.getElementById('stockChart').getContext('2d');
