@@ -1,16 +1,14 @@
-// script.js
 
-// Function to open Signup Modal
 function openSignup() {
     document.getElementById("signupModal").style.display = "block";
 }
 
-// Function to close Signup Modal
+
 function closeSignup() {
     document.getElementById("signupModal").style.display = "none";
 }
 
-// Function for Sign-Up
+
 function signup() {
     const signupEmail = document.getElementById("signupEmail").value;
     const signupUsername = document.getElementById("signupUsername").value;
@@ -41,7 +39,6 @@ function signup() {
     }
 }
 
-// Function for Login
 function login() {
     const email = document.getElementById("email").value;
     const username = document.getElementById("username").value;
@@ -65,15 +62,15 @@ function login() {
     }
 
     if (emailRegex.test(email) && passwordRegex.test(password) && email === storedEmail && username === storedUsername && password === storedPassword) {
-        // Redirect directly to another page after successful login
-        window.location.href = "Mainpage.html"; // Change to your desired page
+
+        window.location.href = "Mainpage.html";
     } else {
         alert("Incorrect username, email, or password.");
     }
 }
 
-// Close the modal if the user clicks outside of it
-window.onclick = function(event) {
+
+window.onclick = function (event) {
     if (event.target == document.getElementById("signupModal")) {
         closeSignup();
     }

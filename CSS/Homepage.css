@@ -1,244 +1,243 @@
-/* Resetting margins and padding */
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: white;
-  }
-  
-  div.header {
-    width: 100%;
-    background-color: red;
-    padding: 12px 0;
-    text-align: right;
-  }
-  
-  div.header a {
-    font-size: 20px;
-    color: white;
-    padding: 5px 10px;
-    text-decoration: none;
-    border: 2px solid transparent;
-    border-bottom: 2px solid white;
-  }
-  
-  div.header a:hover {
-    border-radius: 5px;
-    border: 2px solid white;
-  }
-  
-  div.banner {
-    background-image: url('../Images/homepage_bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    height: 80vh;
-  }
-  
-  div.homepage_cont {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-  }
-  
-  div.banner_header h1 {
-    font-size: 100px;
-    color: red;
-    line-height: 50%;
-  }
-  
-  div.banner_header p {
-    font-size: 40px;
-    color: red;
-    text-transform: uppercase;
-    line-height: 100%;
-  }
-  
-  p.banner_tagline {
-    margin-top: 20px;
-    font-size: 25px;
-    color: white;
-  }
-  
-  div.banner_icons {
-    margin-top: 150px;
-  }
-  
-  div.banner_icons a {
-    font-size: 23px;
-    margin-left: 40px;
-    padding: 25px;
-    background: rgba(0, 0, 0, 0.5);
-    color: rgb(177, 177, 177);
-    border-radius: 50%;
-  }
-  
-  div.banner_icons a:first-child {
-    margin-left: 0;
-  }
-  
-  div.banner_icons a:hover {
-    color: white;
-    background: red;
-    transition: .5s all;
-  }
-  
-  div.homepage_Features {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 0;
-  }
-  
-  div.homepage_feature {
-    padding: 10px 20px;
-    text-align: center;
-    width: 33.3%;
-  }
-  
-  div.homepage_feature:hover {
-    border-top: 2px solid #ff0000;
-    border-bottom: 2px solid #ff0000;
-    transition: 0.2s all;
-  }
-  
-  div.homepage_feature span.feature_icon {
-    height: 80px;
-    width: 100px;
-    display: inline-block;
-    font-size: 50px;
-    background: red;
-    color: white;
-    padding-top: 21px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-  }
-  
-  div.homepage_feature h3.feature_title {
-    margin-bottom: 20px;
-    font-size: 18px;
-  }
-  
-  div.homepage_feature p.feature_discription {
-    color: rgb(127, 127, 127);
-  }
-  
-  div.homepage_notified {
-    display: flex;
-    flex-direction: row;
-    background: rgb(222, 222, 222);
-    padding: 50px 0;
-  }
-  
-  div.homepage_notified_cont {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  div.homepage_notified_cont > div {
-    width: 50%;
-  }
-  
-  div.emailform h3 {
-    font-size: 30px;
-  }
-  
-  div.emailform {
-    width: 40%;
-    text-align: justify;
-    margin-right: 50px;
-  }
-  
-  div.homepage_notified h3 {
-    margin-bottom: 20px;
-  }
-  
-  div.homepage_notified p {
-    color: #848484;
-    line-height: 150%;
-    margin-bottom: 30px;
-  }
-  
-  div.form_cont {
-    position: relative;
-    width: 80%;
-  }
-  
-  div.form_cont input {
-    width: 80%;
-    padding: 15px 10px;
-    border-radius: 15px;
-    border: none;
-  }
-  
-  div.form_cont input:focus {
-    outline: none;
-  }
-  
-  div.form_cont button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    font-size: 22px;
-    padding: 0px 10px;
-    background: red;
-    border: none;
-    color: white;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-  
-  div.socials {
-    text-align: center;
-    padding: 70px 0 40px 0;
-  }
-  
-  h3.social_header {
-    font-size: 30px;
-  }
-  
-  p.social_text {
-    margin-top: 20px;
-    margin-bottom: 25px;
-    color: #848484;
-    font-size: 20px;
-  }
-  
-  div.social_icons_cont {
-    font-size: 23px;
-    height: 50px;
-    padding-top: 7px;
-    border-radius: 50%;
-    display: inline-block;
-  }
-  
-  div.social_icons_cont a:hover {
-    background: red;
-  }
-  
-  div.footer {
-    background: #e3e3e3;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
-  
-  div.footer a {
-    color: #848484;
-    margin-left: 30px;
-    text-decoration: none;
-  }
-  
-  div.footer a:hover {
-    font-weight: bold;
-    color: red;
-    transition: 0.5s all;
-  }
-  
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: white;
+}
+
+div.header {
+  width: 100%;
+  background-color: red;
+  padding: 12px 0;
+  text-align: right;
+}
+
+div.header a {
+  font-size: 20px;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-bottom: 2px solid white;
+}
+
+div.header a:hover {
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+div.banner {
+  background-image: url('../Images/homepage_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 80vh;
+}
+
+div.homepage_cont {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+div.banner_header h1 {
+  font-size: 100px;
+  color: red;
+  line-height: 50%;
+}
+
+div.banner_header p {
+  font-size: 40px;
+  color: red;
+  text-transform: uppercase;
+  line-height: 100%;
+}
+
+p.banner_tagline {
+  margin-top: 20px;
+  font-size: 25px;
+  color: white;
+}
+
+div.banner_icons {
+  margin-top: 150px;
+}
+
+div.banner_icons a {
+  font-size: 23px;
+  margin-left: 40px;
+  padding: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgb(177, 177, 177);
+  border-radius: 50%;
+}
+
+div.banner_icons a:first-child {
+  margin-left: 0;
+}
+
+div.banner_icons a:hover {
+  color: white;
+  background: red;
+  transition: .5s all;
+}
+
+div.homepage_Features {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+}
+
+div.homepage_feature {
+  padding: 10px 20px;
+  text-align: center;
+  width: 33.3%;
+}
+
+div.homepage_feature:hover {
+  border-top: 2px solid #ff0000;
+  border-bottom: 2px solid #ff0000;
+  transition: 0.2s all;
+}
+
+div.homepage_feature span.feature_icon {
+  height: 80px;
+  width: 100px;
+  display: inline-block;
+  font-size: 50px;
+  background: red;
+  color: white;
+  padding-top: 21px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+div.homepage_feature h3.feature_title {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+div.homepage_feature p.feature_discription {
+  color: rgb(127, 127, 127);
+}
+
+div.homepage_notified {
+  display: flex;
+  flex-direction: row;
+  background: rgb(222, 222, 222);
+  padding: 50px 0;
+}
+
+div.homepage_notified_cont {
+  display: flex;
+  flex-direction: row;
+}
+
+div.homepage_notified_cont>div {
+  width: 50%;
+}
+
+div.emailform h3 {
+  font-size: 30px;
+}
+
+div.emailform {
+  width: 40%;
+  text-align: justify;
+  margin-right: 50px;
+}
+
+div.homepage_notified h3 {
+  margin-bottom: 20px;
+}
+
+div.homepage_notified p {
+  color: #848484;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+div.form_cont {
+  position: relative;
+  width: 80%;
+}
+
+div.form_cont input {
+  width: 80%;
+  padding: 15px 10px;
+  border-radius: 15px;
+  border: none;
+}
+
+div.form_cont input:focus {
+  outline: none;
+}
+
+div.form_cont button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  font-size: 22px;
+  padding: 0px 10px;
+  background: red;
+  border: none;
+  color: white;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+div.socials {
+  text-align: center;
+  padding: 70px 0 40px 0;
+}
+
+h3.social_header {
+  font-size: 30px;
+}
+
+p.social_text {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #848484;
+  font-size: 20px;
+}
+
+div.social_icons_cont {
+  font-size: 23px;
+  height: 50px;
+  padding-top: 7px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+div.social_icons_cont a:hover {
+  background: red;
+}
+
+div.footer {
+  background: #e3e3e3;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+div.footer a {
+  color: #848484;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+div.footer a:hover {
+  font-weight: bold;
+  color: red;
+  transition: 0.5s all;
+}
