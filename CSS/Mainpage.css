@@ -1,4 +1,4 @@
-/* General styling */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -8,7 +8,7 @@ body {
   flex-direction: column;
 }
 
-/* Header styling */
+
 header {
   background-color: #ff0000;
   color: white;
